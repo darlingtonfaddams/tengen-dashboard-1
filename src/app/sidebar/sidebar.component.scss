@@ -1,0 +1,293 @@
+#logo img {
+    max-width: 130px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+
+  #logo, h2, #support, #hide-panel {
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  nav {
+    margin-bottom: 20px;
+  }
+  
+  nav h2 {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #8D8D8D;
+    margin-bottom: 2px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    font-size: 14px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav i {
+    margin-right: 10px;
+  }
+  
+  nav a {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #0A0A0A;
+    text-decoration: none;
+  }
+
+  nav .active {
+    font-weight: 600;
+    color: #EF2C5A;
+  }
+  nav .default {
+    font-weight: 600;
+    color: #EF2C5A;
+  }
+
+  nav a:hover {
+    color: #EF2C5A; /* change color of text */
+  }
+
+  .sidebar-link {
+    transition: all 0.3s ease-in-out; /* transition effect */
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+    .sidebar-link:hover {
+        background-color: #f2ece6;
+        cursor: pointer;
+        color: #EF2C5A; /* change color of text */
+    }
+
+    .sidebar-link:hover i {
+        color: #EF2C5A; /* change color of icon */
+    }
+
+    .active i {
+        color: #EF2C5A; /* active icon color */
+    }
+  
+  #support button {
+    background-color: #EF2C5A;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+  }
+
+  #support button:hover {
+    background-color: #fff;
+    color: #EF2C5A;
+    border: 1px solid #EF2C5A;
+  }
+  
+  #support button i {
+    margin-left: -15px;
+    margin-right: 17px;
+  }
+  
+  #hide-panel button {
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #333;;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+  }
+
+  #hide-panel button:hover {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;;
+  }
+
+  #hide-panel button i {
+    margin-right: 13px;
+  }
+
+/* Responsive Queries */
+
+/* Start of 850px responsive */
+@media screen and (max-width: 850px) {
+    
+  #logo img {
+    width: 65%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  nav h2 {
+    font-size: 12px;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  nav ul {
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav li {
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    line-height: 40px;
+  }
+
+  nav a i {
+    text-align: center;
+    margin: 0;
+    font-size: 27px;
+    vertical-align: middle;
+  }
+
+  nav a span {
+    display: none;
+  }
+
+  #logo, h2, #support, #hide-panel {
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #support button {
+    margin-top: 30px;
+    width: 60px;
+    font-size: 17px;
+  }
+
+  #hide-panel button {
+    width: 60px;
+    font-size: 17px;
+  }
+  
+  #support button i {
+    margin: 0;
+  }
+
+  #hide-panel button i {
+    margin: 0;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+
+  #logo img {
+    width: 85%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  nav span {
+    display: none;
+  }
+
+
+  nav {
+    margin-bottom: 20px;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: left;
+    line-height: 30px;
+  }
+  
+  nav i {
+    display: none;
+  }
+  
+  nav a {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #0A0A0A;
+    text-decoration: none;
+  }
+
+
+  nav a span {
+    display: inline-block;
+  }
+
+
+  #support button {
+    margin-top: 30px;
+    width: 120px;
+    font-size: 15px;
+  }
+
+  #support button i {
+    display: block;
+    margin-left: -5px;
+    margin-right: 15px;
+  }
+  
+  #support button span {
+    display: block;
+  }
+
+  #hide-panel button {
+    width: 120px;
+    font-size: 14px;
+  }
+  
+  #hide-panel button span {
+    display: block;
+  }
+
+  #hide-panel button i {
+    display: block;
+    margin-right: 13px;
+  }
+
+}

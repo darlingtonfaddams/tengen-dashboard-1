@@ -1,0 +1,31 @@
+<div class="main-container">
+
+  <input type="checkbox" id="menu-bars" hidden>
+  <div id="mobile-checkbox">
+    <label for="menu-bars" id="menu-bars" class="menu-bar">
+        <i class="fa fa-bars"></i>
+    </label>
+  </div>
+
+  <div id="sidebar-content">
+    <div id="sidebar">
+      <app-sidebar></app-sidebar>
+    </div>
+  </div>
+
+
+  <div id="main-content">
+    <div id="main-right">
+
+      <header class="top-navbar">
+        <app-topnavbar class="top-menu"></app-topnavbar>
+      </header>
+
+      <main class="body-content">
+        <app-transaction-history></app-transaction-history>
+      </main>
+
+    </div>
+  </div>
+  
+</div>

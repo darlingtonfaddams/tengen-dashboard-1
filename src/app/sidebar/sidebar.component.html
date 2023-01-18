@@ -1,0 +1,81 @@
+<nav>
+<div id="logo">
+    <img src="assets/images/tengen-logo.png" alt="Logo">
+</div>
+  <h2>Main <span>pages</span></h2>
+  <ul>
+    <li class="sidebar-link">
+      <a routerLink="/" class="default" (click)="toggleActive()">
+        <i class="fas fa-tachometer-alt"></i>
+        <span>Dashboard</span>
+      </a>
+    </li>
+    <li class="sidebar-link">
+      <a href="#">
+        <i class="fas fa-wallet"></i>
+        <span>Balances</span>
+      </a>
+    </li>
+    <li class="sidebar-link">
+      <a routerLink="/transactions" routerLinkActive="active">
+        <i class="fas fa-exchange-alt" routerLinkActive="active"></i>
+        <span>Transactions</span>
+      </a>
+    </li>
+    <li class="sidebar-link">
+      <a href="#">
+        <i class="fas fa-chart-bar"></i>
+        <span>Analytics</span>
+      </a>
+    </li>
+    <li class="sidebar-link">
+      <a href="#">
+        <i class="fas fa-bullhorn"></i>
+        <span>Marketing</span>
+      </a>
+    </li>
+    <li class="sidebar-link">
+      <a href="#">
+        <i class="fas fa-money-bill-alt"></i>
+        <span>Exchange rates</span>
+      </a>
+    </li>
+  </ul>
+  <h2>Accept <span>payments</span></h2>
+  <ul>
+    <li class="sidebar-link">
+      <a href="#">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Checkout</span>
+      </a>
+    </li>
+    <li class="sidebar-link">
+      <a href="#">
+        <i class="fas fa-link"></i>
+        <span>Payment Links</span>
+      </a>
+    </li>
+  </ul>
+  <h2>Send <span>payments</span></h2>
+  <ul>
+    <li class="sidebar-link">
+      <a href="#">
+        <i class="fas fa-paper-plane"></i>
+        <span>Wire</span>
+      </a>
+    </li>
+  </ul>
+
+  <div id="support">
+    <button>
+      <i class="fas fa-life-ring"></i>
+      <span>Support</span>
+    </button>
+  </div>
+  <div id="hide-panel">
+    <button>
+      <i class="fas fa-arrow-left"></i>
+      <span>Hide Panel</span>
+    </button>
+  </div>
+</nav>

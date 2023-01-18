@@ -1,0 +1,114 @@
+.main-container {
+    display: flex;
+    position: relative;
+}
+
+  #sidebar {
+    width: 230px;
+    height: 100%;
+    background-color: #FFFBF7;
+    top: 0;
+    z-index: 100;
+  }
+
+  #main-content {
+    flex: 1;
+    background-color: #fff;
+    top: 65px;
+  }
+
+  /* Right section containing top navbar and body content */
+  #main-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-navbar {
+    height: 64px;
+    background-color: rgb(251, 251, 251);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(228, 228, 228);
+  }
+
+  .top-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .body-content {
+    flex: 1;
+    padding: 20px;
+  }
+  /* End of right section */
+  
+
+  #mobile-checkbox {
+    position: absolute;
+    top: 15px;
+    left: 0;
+  }
+  
+  
+  .menu-bar {
+    font-size: 26px;
+    padding-left: 10px;
+    display: none;
+  }
+  
+
+/* Responsive Queries */
+
+/* Start of 850px responsive */
+@media screen and (max-width: 850px) {
+
+  #sidebar {
+    width: 110px;
+    height: auto;
+  }
+
+  #main-content {
+    flex: 1;
+    height: 100%;
+    background-color: #fff;
+  }
+
+
+}
+/* End of 850px responsive */
+
+
+/* Start of 500px responsive */
+@media screen and (max-width: 500px) {
+  #sidebar-content {
+    display: none;
+    transition: all 0.5s;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  #sidebar {
+    width: 230px;
+    height: 100%;
+    background-color: #FFFBF7;
+    top: 0;
+    z-index: 100;
+  }
+
+}
+/* End of 475px responsive */
+
+
+#menu-bars:checked ~ #sidebar-content {
+  display: block;
+}
+
+#menu-bars:checked ~ #main-content {
+  display: none;
+}
+
